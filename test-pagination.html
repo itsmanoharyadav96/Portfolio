@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination Test</title>
+    <style>
+        body {
+            background: #0a0a0a;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .projects-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .projects-side-pagination {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+            z-index: 100;
+            height: 100%;
+        }
+        .side-pagination-btn {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            pointer-events: all;
+            opacity: 0.7;
+        }
+        .side-pagination-btn:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
+            opacity: 1;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        .side-pagination-btn.prev-btn {
+            margin-left: -25px;
+            align-self: center;
+        }
+        .side-pagination-btn.next-btn {
+            margin-right: -25px;
+            align-self: center;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr 1fr;
+            gap: 25px;
+            padding: 20px 0;
+        }
+        .project-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .project-card.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .project-card:not(.fade-in) {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pagination Test</h1>
+    
+    <div class="projects-container">
+        <!-- Side Pagination Buttons -->
+        <div class="projects-side-pagination">
+            <button class="side-pagination-btn prev-btn" id="projectsPrevBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+            </button>
+            <button class="side-pagination-btn next-btn" id="projectsNextBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="projects-grid" id="projectsGrid">
+            <div class="project-card" data-project="1">
+                <h3>Project 1</h3>
+                <p>Description for project 1</p>
+            </div>
+            <div class="project-card" data-project="2">
+                <h3>Project 2</h3>
+                <p>Description for project 2</p>
+            </div>
+            <div class="project-card" data-project="3">
+                <h3>Project 3</h3>
+                <p>Description for project 3</p>
+            </div>
+            <div class="project-card" data-project="4">
+                <h3>Project 4</h3>
+                <p>Description for project 4</p>
+            </div>
+            <div class="project-card" data-project="5">
+                <h3>Project 5</h3>
+                <p>Description for project 5</p>
+            </div>
+            <div class="project-card" data-project="6">
+                <h3>Project 6</h3>
+                <p>Description for project 6</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Projects Pagination System
+        const initProjectsPagination = () => {
+            const projectsGrid = document.getElementById('projectsGrid');
+            const projectsPrevBtn = document.getElementById('projectsPrevBtn');
+            const projectsNextBtn = document.getElementById('projectsNextBtn');
+            
+            if (!projectsGrid) {
+                console.log('Projects grid not found');
+                return;
+            }
+            
+            const allCards = Array.from(projectsGrid.querySelectorAll('.project-card'));
+            const cardsPerPage = 3;
+            const totalPages = Math.ceil(allCards.length / cardsPerPage);
+            let currentPage = 0;
+            
+            console.log('Projects pagination initialized:');
+            console.log('Total cards found:', allCards.length);
+            console.log('Total pages:', totalPages);
+            
+            // Initialize pagination
+            updatePagination();
+            
+            // Side pagination button event listeners
+            if (projectsPrevBtn) {
+                projectsPrevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Previous button clicked, current page:', currentPage);
+                    if (currentPage > 0) {
+                        currentPage--;
+                        updatePagination();
+                    }
+                });
+            }
+            
+            if (projectsNextBtn) {
+                projectsNextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Next button clicked, current page:', currentPage);
+                    if (currentPage < totalPages - 1) {
+                        currentPage++;
+                        updatePagination();
+                    }
+                });
+            }
+            
+            function updatePagination() {
+                console.log('updatePagination called, currentPage:', currentPage, 'totalPages:', totalPages);
+                
+                // Hide all cards
+                allCards.forEach(card => {
+                    card.style.display = 'none';
+                    card.classList.remove('fade-in');
+                });
+                
+                // Show cards for current page
+                const startIndex = currentPage * cardsPerPage;
+                const endIndex = Math.min(startIndex + cardsPerPage, allCards.length);
+                
+                console.log('Showing cards from index:', startIndex, 'to:', endIndex);
+                for (let i = startIndex; i < endIndex; i++) {
+                    if (allCards[i]) {
+                        allCards[i].style.display = 'block';
+                        allCards[i].classList.add('fade-in');
+                    }
+                }
+                
+                // Update side pagination buttons
+                if (projectsPrevBtn) {
+                    projectsPrevBtn.disabled = currentPage === 0;
+                    projectsPrevBtn.style.opacity = currentPage === 0 ? '0.3' : '0.7';
+                }
+                if (projectsNextBtn) {
+                    projectsNextBtn.disabled = currentPage === totalPages - 1;
+                    projectsNextBtn.style.opacity = currentPage === totalPages - 1 ? '0.3' : '0.7';
+                }
+            }
+        };
+        
+        // Initialize pagination when DOM is loaded
+        document.addEventListener('DOMContentLoaded', initProjectsPagination);
+    </script>
+</body>
+</html>

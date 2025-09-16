@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <title>Manohar Yadav - Full-stack Developer</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container" id="nav">
+            <div class="logo">Manohar Yadav </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#articles">articles</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="profile-image">
+                    <img src="/images/profile.jpg" alt="Profile" class="profile-img">
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section - Exact Match to Image -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-left">
+                        <h1 class="hero-title">
+                            <span class="title-line-1">Full-stack Java</span>
+                            <span class="title-line-2"> Developer</span>
+                        </h1>
+                        <p class="hero-description">
+                            My goal is to write <em>maintainable</em>, <em>clean</em> and <em>understandable</em> code to process development was enjoyable.
+                        </p>
+                        <div class="hero-actions">
+                            <div class="button-container">
+                                <a href="#projects" class="projects-btn">
+                                    <span>Projects</span>
+                                </a>
+                            <div class="arrow-button">
+                                <span class="arrow">→</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <div class="social-container">
+                            <a href="https://github.com/Manoharyadav7080" class="social-item">
+                                <div class="social-icon github">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </div>
+                                <span>Github</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/manohaharyadav/" class="social-item">
+                                <div class="social-icon linkedin">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </div>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-item">
+                                <div class="social-icon telegram">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                    </svg>
+                                </div>
+                                <span>Telegram</span>
+                            </a>
+                            <a href="https://www.facebook.com/manoharyadav.info/" class="social-item">
+                                <div class="social-icon facebook">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </div>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/itsmanoharyadav_/" class="social-item">
+                                <div class="social-icon instagram">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </div>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-header">
+                    <p>.../About me ...</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-left">
+                        <div class="about-intro">
+                            <p>Hello! I'm <strong>Manohar</strong>, I'm a <strong><em>full-stack developer</em></strong>. More than <strong><em>1 years</em></strong> experience.</p>
+                        </div>
+                        
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h3 class="skill-title">Front-end</h3>
+                                <div class="skill-techs">
+                                    HTML / CSS / JavaScript / TypeScript / React / Vue / Vuex / Redux Toolkit / NextJs / GraphQL / React Native 
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <h3 class="skill-title">Styles</h3>
+                                <div class="skill-techs">
+                                    CSS / Tailwind / Bootstrap / Material UI / SCSS / SASS / PostCSS
+                                </div>
+                            </div>
+                            
+                            <div class="about-actions">
+                                <button class="action-btn github-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn external-btn" id="heroExternalBtn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <h3 class="skill-title">Back-end</h3>
+                                <div class="skill-techs">
+                                    Java / Spring / SpringBoot / Spring Security / OAuth 2.0  / Servlet / JSP / Thymeleaf / JDBC / Hibernate / JPA / SQL / NoSQL / PostgreSQL / MySQL / MongoDB / Redis / Kafka / Node / Nest / Microservices
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <h3 class="skill-title">DevOps</h3>
+                                <div class="skill-techs">
+                                    Nginx / Docker / (CI/CD) / k8s / Bash / GitHub / GitLab / Jenkins /  Docker / Kubernetes / Maven / Gradle /
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-note">
+                            <p><em>Some of my <strong>favorite technologies, topics, or tools</strong> that I worked with</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-right">
+                        <div class="profile-picture">
+                            <img src="/images/profile_.jpg" alt="Manohar Yadav - Full-stack Developer" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="projects-header">
+                    <p>.../Projects ...</p>
+                </div>
+                
+                <div class="projects-container">
+                    <!-- Project 1: Gostat -->
+                    <div class="project-item">
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h2 class="project-title">portfolio websites</h2>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML / CSS</span>
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">SpringBoot</span>
+                                    <span class="tech-tag">Hibernate</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                                <p class="project-description">
+                                    A sleek, modern, and high-performing portfolio website designed with React, Tailwind, and TypeScript for an interactive front-end, and powered by a robust Spring Boot + Hibernate + MySQL back-end. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Easily add, update, or manage projects, blogs, and achievements. Integrated form with direct email notifications for instant client communication. Fast, responsive, and SEO-friendly design to attract international clients. Built with industry standards used by top companies worldwide.                    </p>
+                                <div class="project-actions">
+                                    
+                                    <button class="action-btn github-btn">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </button>
+
+                                    <button class="action-btn external-btn" id="gostatDetailsBtn">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-visual">
+                                <div class="modern-showcase">
+                                    <div class="image-container large-container">
+                                        <img src="/images/1st.jpg" alt="Gostat Dashboard" class="modern-image">
+                                            </div>
+                                    <div class="image-container medium-container">
+                                        <img src="/images/2nd.jpg" alt="Gostat API" class="modern-image">
+                                        </div>
+                                    <div class="image-container small-container">
+                                        <img src="/images/3rd.jpg " alt="Gostat Metrics" class="modern-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Kana Master -->
+                    <div class="project-item">
+                        <div class="project-content">
+                            <div class="project-visual">
+                                <div class="modern-showcase">
+                                    <div class="image-container small-container">
+                                        <img src="/images/4th.jpg" alt="Anime Mobile App" class="modern-image">
+                                    </div>
+                                    <div class="image-container large-container">
+                                        <img src="/images/5th.jpg" alt="Anime Dashboard" class="modern-image">
+                                    </div>
+                                    <div class="image-container medium-container">
+                                        <img src="/images/6th.jpg" alt="Anime Notifications" class="modern-image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h2 class="project-title">E-Commerce websites </h2>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML / CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">SpringBoot</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">github</span> 
+                                    
+                                    <span class="tech-tag">jenkins</span>
+                                    <span class="tech-tag">docker</span>
+                                    <span class="tech-tag">kubernetes</span>
+                                    <span class="tech-tag">maven</span>
+                                    
+                                    
+                                </div>
+                                <p class="project-description">
+                                    A modern, scalable, and feature-rich E-Commerce platform designed to deliver a seamless online shopping experience for global businesses. Built with Java, React, and Spring Boot, it combines powerful backend performance with an intuitive frontend interface. The system is engineered for high availability, scalability, and security, making it suitable for startups as well as enterprise-level clients.
+                                </p>
+                                <div class="project-actions">
+                                    <button class="action-btn github-btn">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </button>
+                                    <button class="action-btn external-btn" id="kanaMasterDetailsBtn">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Anime Sentry -->
+                    <div class="project-item">
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h2 class="project-title">Company profile websites</h2>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML / CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">NextJs</span>
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">github</span>
+                                    <span class="tech-tag">jenkins</span>
+                                    <span class="tech-tag">docker</span>
+                                    <span class="tech-tag">kubernetes</span>
+                                 
+                                    
+                                </div>
+                                <p class="project-description">
+                                    we are  designed and developed the official company profile website for ShudhaTech.com, a technology solutions provider. The website was built to establish a strong digital identity, showcase services, and create a professional brand presence for attracting international clients and partners.                                <div class="how-it-works">
+                                    <h4>How It Works:</h4>
+                                    <ul>
+                                        <li>Learn about ShudhaTech’s mission, vision, and services.</li>
+                                        <li>See what solutions we provide and past successful projects.</li>
+                                        <li> Get to know the experts behind the company.</li>
+                                        <li>Contact us for any inquiries or collaborations.</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="project-actions">
+                                    <button class="action-btn send-btn">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                                        </svg>
+                                    </button>
+                                    <button class="action-btn external-btn" id="animeSentryDetailsBtn">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-visual">
+                                <div class="modern-showcase">
+                                    <div class="image-container small-container">
+                                        <img src="/images/s1.png" alt="Anime Mobile App" class="modern-image">
+                                        </div>
+                                    <div class="image-container large-container">
+                                        <img src="/images/s2.png" alts2.png="Anime Dashboard" class="modern-image">
+                                    </div>
+                                    <div class="image-container medium-container">
+                                        <img src="/images/s3.png" alt s3.png="Anime Notifications" class="modern-image">
+                                        </div>
+                                    </div>
+                                        </div>
+
+                            <p class="cta">Connect now and never miss an episode! ✨</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles" class="articles-section">
+            <div class="container">
+                <div class="articles-header">
+                    <h2>Articles</h2>
+                </div>
+                
+                <div class="articles-container">
+                    <!-- Left Side Pagination -->
+                    <div class="articles-pagination-left">
+                        <div class="pagination-dot active" data-page="1">1</div>
+                        <div class="pagination-dot" data-page="2">2</div>
+                        <div class="pagination-arrow">↓</div>
+                    </div>
+                    
+                    <!-- Articles Grid -->
+                    <div class="articles-grid">
+                        
+
+                        <!-- Article Card 2 -->
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3>Build Scalable APIs with Spring Boot</h3>
+<p>This article explores how to create enterprise-grade REST APIs using Spring Boot, Hibernate, and MySQL with Dockerized deployment.</p>
+
+                                <div class="article-actions">
+                                    <button class="read-more-btn" id="article2ReadMoreBtn">Read more</button>
+                                    <button class="arrow-btn" id="article2ArrowBtn">
+                                        <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Article Card 3 -->
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3>Microservices with Java & Kubernetes</h3>
+<p>A step-by-step guide to building and deploying Java-based microservices on Kubernetes with CI/CD automation using Jenkins.</p>
+                                <div class="article-actions">
+                                    <button class="read-more-btn" id="article3ReadMoreBtn">Read more</button>
+                                    <button class="arrow-btn" id="article3ArrowBtn">
+                                        <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Article Card 4 -->
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3>Next.js Full-Stack Development</h3>
+<p>Learn how to build both frontend and backend with Next.js, integrate APIs, and deploy on Vercel or AWS for maximum performance.</p>
+                                <div class="article-actions">
+                                    <button class="read-more-btn" id="article4ReadMoreBtn">Read more</button>
+                                    <button class="arrow-btn" id="article4ArrowBtn">
+                                        <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3>Real-Time Chat App with WebSockets</h3>
+<p>This tutorial shows how to implement a live chat system using Node.js, React, and WebSockets for instant communication.</p>
+                                <div class="article-actions">
+                                    <button class="read-more-btn" id="article5ReadMoreBtn">Read more</button>
+                                    <button class="arrow-btn" id="article5ArrowBtn">
+                                        <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3>CI/CD Pipeline with Jenkins and Docker</h3>
+<p>Discover how to automate builds, tests, and deployments using Jenkins pipelines integrated with Docker containers.</p>
+                                <div class="article-actions">
+                                    <button class="read-more-btn" id="article6ReadMoreBtn">Read more</button>
+                                    <button class="arrow-btn" id="article6ArrowBtn">
+                                        <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3>Secure Authentication with OAuth2</h3>
+<p>Implement modern authentication with OAuth2 and JWT tokens for a secure and scalable user login system.</p>
+                                <div class="article-actions">
+                                    <button class="read-more-btn" id="article6ReadMoreBtn">Read more</button>
+                                    <button class="arrow-btn" id="article6ArrowBtn">
+                                        <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3>Server-Side Rendering with Next.js</h3>
+<p>Learn how SSR improves SEO and performance while building dynamic web applications with Next.js and TypeScript.</p>
+
+                                <div class="article-actions">
+                                    <button class="read-more-btn" id="article6ReadMoreBtn">Read more</button>
+                                    <button class="arrow-btn" id="article6ArrowBtn">
+                                        <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3>E-Commerce Platform using React & Spring Boot</h3>
+<p>This article demonstrates how to build a fully functional e-commerce website with React frontend and Spring Boot backend.</p>
+                                <div class="article-actions">
+                                    <button class="read-more-btn" id="article6ReadMoreBtn">Read more</button>
+                                    <button class="arrow-btn" id="article6ArrowBtn">
+                                        <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3>Container Orchestration with Kubernetes</h3>
+<p>Understand the basics of Kubernetes, from pods to services, and learn how to scale microservices efficiently.</p>
+                                <div class="article-actions">
+                                    <button class="read-more-btn" id="article6ReadMoreBtn">Read more</button>
+                                    <button class="arrow-btn" id="article6ArrowBtn">
+                                        <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3>Monitoring with Prometheus & Grafana</h3>
+<p>A beginner-friendly guide to setting up Prometheus and Grafana for monitoring microservices and visualizing metrics.</p>
+                                <div class="article-actions">
+                                    <button class="read-more-btn" id="article6ReadMoreBtn">Read more</button>
+                                    <button class="arrow-btn" id="article6ArrowBtn">
+                                        <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="work-section">
+            <div class="container">
+                <div class="work-header">
+                    <h2>Work</h2>
+                </div>
+                
+                <div class="work-container">
+                    <div class="work-experience">
+                        <!-- Work Entry 1 -->
+                        <div class="work-entry">
+                            <div class="work-years">
+                                <span class="year-range">2024 </span>
+                                <span class="duration"> 6 months</span>
+                            </div>
+                            <div class="work-details">
+                                <div class="company">Coding Block</div>
+                                <div class="role"> Java with DSA</div>
+                            </div>
+                        </div>
+
+                        <!-- Work Entry 2 (Active/Highlighted) -->
+                        <div class="work-entry active">
+                            <div class="work-indicator"></div>
+                            <div class="work-years">
+                                <span class="year-range">2022 - 2023</span>
+                                <span class="duration">8 month</span>
+                            </div>
+                            <div class="work-details">
+                                <div class="company">Apna College </div>
+                                <div class="role">java </div>
+                            </div>
+                        </div>
+
+                        <!-- Work Entry 3 -->
+                        <!-- <div class="work-entry">
+                            <div class="work-years">
+                                <span class="year-range">2020 - 2021</span>
+                                <span class="duration">9 months</span>
+                            </div>
+                            <div class="work-details">
+                                <div class="company">SN Inc.</div>
+                                <div class="role">Fullstack developer | JavaScript & Python</div>
+                            </div>
+                        </div> -->
+
+                        <!-- Work Entry 4 -->
+                    
+                    </div>
+                    
+                    <div class="work-summary">
+                        <div class="summary-label">Work experience</div>
+                        <div class="summary-total">more than 1 years</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts" class="contacts-section">
+            <div class="container">
+                <div class="contacts-header">
+                    <p>.../Contacts ...</p>
+                </div>
+                
+                <div class="contacts-content">
+                    <div class="contacts-left">
+                        <div class="name-section">
+                            <h1 class="contact-name">
+                                <span class="name-line-1">Manohar</span>
+                                <span class="name-line-2">Yadav</span>
+                            </h1>
+                            <p class="contact-title">Full-stack developer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contacts-right">
+                        <div class="navigation-links">
+                            <a href="#home" class="nav-link">Main</a>
+                            <a href="#about" class="nav-link">About</a>
+                            <a href="#projects" class="nav-link">Projects</a>
+                            <a href="#articles" class="nav-link">Articles</a>
+                        </div>
+                        
+                        <div class="site-details">
+                            <h3>Site</h3>
+                            <p>Handcrafted by ME /</p>
+                            <p>Designed by Manohar /</p>
+                            <p>Powered by Spring Boot</p>
+                        </div>
+                        
+                        <div class="social-buttons">
+                            <a href="https://github.com/Manoharyadav7080" class="social-button">
+                                <div class="social-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </div>
+                                <span>Github</span>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/manohaharyadav/" class="social-button">
+                                <div class="social-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </div>
+                                <span>Linkedin</span>
+                            </a>
+                            
+                            <a href="mailto:manoharyadav.info@gmail.com" class="social-button">
+                                <div class="social-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                    </svg>
+                                </div>
+                                <span>E-mail</span>
+                            </a>
+                            
+                            <a href="#" class="social-button">
+                                <div class="social-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                    </svg>
+                                </div>
+                                <span>Telegram</span>
+                            </a>
+                            
+                            <a href="https://www.facebook.com/manoharyadav.info/" class="social-button">
+                                <div class="social-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </div>
+                                <span>Facebook</span>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/itsmanoharyadav_/" class="social-button">
+                                <div class="social-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </div>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <h3>Manohar Yadav</h3>
+                        <p>Full-stack Developer</p>
+                    </div>
+                    <div class="footer-description">
+                        <p>Passionate about creating innovative solutions and building amazing user experiences. Let's connect and build something great together.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-center">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#articles">Articles</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#contacts">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-contact">
+                        <h4>Get In Touch</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                    </svg>
+                                </div>
+                                <span>yadavmanohar78094@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                    </svg>
+                                </div>
+                                <span>+91 9693912116</span>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                </div>
+                                <span>India </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/Manoharyadav7080" class="social-link" aria-label="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/manohaharyadav/" class="social-link" aria-label="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/manoharyadav.info/" class="social-link" aria-label="Facebook">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/itsmanoharyadav_/" class="social-link" aria-label="Instagram">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Manohar Yadav. All rights reserved.</p>
+                </div>
+                <div class="footer-tech">
+                    <p>Built with <span class="heart">❤️</span> using Spring Boot & Thymeleaf</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Article Documentation Popup -->
+    <div id="articlePopup" class="article-popup-overlay">
+        <div class="article-popup-content">
+            <div class="article-popup-header">
+                <div class="article-meta">
+                    <span class="article-category" id="articleCategory">Technical Guide</span>
+                    <span class="article-date" id="articleDate">December 2024</span>
+                </div>
+                <button class="article-popup-close" id="articlePopupClose">&times;</button>
+            </div>
+            
+            <div class="article-popup-body">
+                <h1 id="articleTitle">The Simplest Example: Kafka + Golang</h1>
+                
+                <div class="article-toc">
+                    <h3>Table of Contents</h3>
+                    <ul id="articleToc">
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#prerequisites">Prerequisites</a></li>
+                        <li><a href="#setup">Setup</a></li>
+                        <li><a href="#implementation">Implementation</a></li>
+                        <li><a href="#testing">Testing</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                    </ul>
+                </div>
+                
+                <div class="article-content">
+                    <section id="overview">
+                        <h2>Overview</h2>
+                        <p id="articleOverview">This comprehensive guide demonstrates how to implement a microservice architecture using Apache Kafka, Golang, and Docker. We'll build a simple but production-ready system that showcases event-driven architecture principles.</p>
+                    </section>
+                    
+                    <section id="prerequisites">
+                        <h2>Prerequisites</h2>
+                        <div class="prerequisites-list">
+                            <div class="prereq-item">
+                                <h4>Required Software</h4>
+                                <ul>
+                                    <li>Docker & Docker Compose</li>
+                                    <li>Go 1.21+</li>
+                                    <li>Apache Kafka</li>
+                                    <li>Git</li>
+                                </ul>
+                            </div>
+                            <div class="prereq-item">
+                                <h4>Knowledge Requirements</h4>
+                                <ul>
+                                    <li>Basic Go programming</li>
+                                    <li>Understanding of microservices</li>
+                                    <li>Docker fundamentals</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="setup">
+                        <h2>Project Setup</h2>
+                        <div class="code-section">
+                            <h4>1. Initialize Go Module</h4>
+                            <pre><code>go mod init kafka-golang-example
+                            go get github.com/Shopify/sarama
+                            go get github.com/gin-gonic/gin</code></pre>
+                        </div>
+                        
+                        <div class="code-section">
+                            <h4>2. Docker Compose Configuration</h4>
+                            <pre><code>version: '3.8'
+                                        services:
+                                        zookeeper:
+                                            image: confluentinc/cp-zookeeper:latest
+                                            environment:
+                                            ZOOKEEPER_CLIENT_PORT: 2181
+                                            
+                                        kafka:
+                                            image: confluentinc/cp-kafka:latest
+                                            depends_on:
+                                            - zookeeper
+                                            ports:
+                                            - "9092:9092"
+                                            environment:
+                                            KAFKA_BROKER_ID: 1
+                                            KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+                                            KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092</code></pre>
+                        </div>
+                    </section>
+                    
+                    <section id="implementation">
+                        <h2>Implementation</h2>
+                        <div class="implementation-step">
+                            <h4>Producer Service</h4>
+                            <pre><code>package main
+
+import (
+    "github.com/Shopify/sarama"
+    "github.com/gin-gonic/gin"
+    "log"
+)
+
+func main() {
+    config := sarama.NewConfig()
+    config.Producer.Return.Successes = true
+    
+    producer, err := sarama.NewSyncProducer([]string{"localhost:9092"}, config)
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer producer.Close()
+    
+    r := gin.Default()
+    r.POST("/send", func(c *gin.Context) {
+        message := &sarama.ProducerMessage{
+            Topic: "test-topic",
+            Value: sarama.StringEncoder("Hello Kafka!"),
+        }
+        
+        _, _, err := producer.SendMessage(message)
+        if err != nil {
+            c.JSON(500, gin.H{"error": err.Error()})
+            return
+        }
+        
+        c.JSON(200, gin.H{"status": "message sent"})
+    })
+    
+    r.Run(":8080")
+}</code></pre>
+                        </div>
+                        
+                        <div class="implementation-step">
+                            <h4>Consumer Service</h4>
+                            <pre><code>package main
+
+import (
+    "github.com/Shopify/sarama"
+    "log"
+)
+
+func main() {
+    consumer, err := sarama.NewConsumer([]string{"localhost:9092"}, nil)
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer consumer.Close()
+    
+    partitionConsumer, err := consumer.ConsumePartition("test-topic", 0, sarama.OffsetNewest)
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer partitionConsumer.Close()
+    
+    for {
+        select {
+        case message := <-partitionConsumer.Messages():
+            log.Printf("Received: %s", string(message.Value))
+        case err := <-partitionConsumer.Errors():
+            log.Printf("Error: %v", err)
+        }
+    }
+}</code></pre>
+                        </div>
+                    </section>
+                    
+                    <section id="testing">
+                        <h2>Testing the System</h2>
+                        <div class="testing-steps">
+                            <div class="test-step">
+                                <h4>1. Start Services</h4>
+                                <pre><code>docker-compose up -d
+go run producer/main.go &
+go run consumer/main.go</code></pre>
+                            </div>
+                            
+                            <div class="test-step">
+                                <h4>2. Send Test Message</h4>
+                                <pre><code>curl -X POST http://localhost:8080/send \
+  -H "Content-Type: application/json" \
+  -d '{"message": "Hello from Kafka!"}'</code></pre>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="conclusion">
+                        <h2>Conclusion</h2>
+                        <p>This example demonstrates the fundamental concepts of event-driven architecture using Kafka and Golang. The system is designed to be scalable, maintainable, and production-ready.</p>
+                        
+                        <div class="key-takeaways">
+                            <h4>Key Takeaways</h4>
+                            <ul>
+                                <li>Event-driven architecture enables loose coupling</li>
+                                <li>Kafka provides reliable message delivery</li>
+                                <li>Go's concurrency model works well with Kafka</li>
+                                <li>Docker simplifies development and deployment</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+            <div class="article-popup-footer">
+                <div class="article-actions">
+                    <button class="article-btn share-btn" id="articleShareBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/>
+                        </svg>
+                        Share
+                    </button>
+                    <button class="article-btn bookmark-btn" id="articleBookmarkBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                        </svg>
+                        Bookmark
+                    </button>
+                    <button class="article-btn github-btn" id="articleGithubBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        View Code
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Popup -->
+    <div id="testimonialPopup" class="testimonial-popup-overlay">
+        <div class="testimonial-popup-content">
+            <button class="testimonial-popup-close" id="testimonialPopupClose">&times;</button>
+            <div class="testimonial-card">
+                <div class="testimonial-profile">
+                    <img src="/images/profile_.jpg" alt="Client Profile" class="testimonial-photo">
+                    <div class="quote-icon">"</div>
+                </div>
+                <div class="testimonial-info">
+                    <h3 class="testimonial-name" id="testimonialName">Bhupendar Yadav..</h3>
+                    <p class="testimonial-date" id="testimonialDate">14 June, 2024</p>
+                    <p class="testimonial-text" id="testimonialText">Bhupender is a skilled programmer with a deep passion for coding and software development. His technical expertise and problem-solving abilities make him an outstanding professional in his field.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Popup -->
+    <div id="projectPopup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <div class="popup-title-section">
+                <h2 id="popupTitle">Project Details</h2>
+                    <div class="popup-meta">
+                        <span class="popup-category">Full-Stack Project</span>
+                        <span class="popup-date">2024</span>
+                    </div>
+                </div>
+                <button class="popup-close" id="popupClose">&times;</button>
+            </div>
+            
+            <div class="popup-body">
+                <div class="popup-main-content">
+                    <div class="popup-section overview-section">
+                        <div class="section-header">
+                    <h3>Project Overview</h3>
+                            <div class="section-indicator"></div>
+                        </div>
+                    <p id="popupOverview">Detailed project information will be displayed here.</p>
+                </div>
+                    
+                    <div class="popup-section technologies-section">
+                        <div class="section-header">
+                    <h3>Technologies Used</h3>
+                            <div class="section-indicator"></div>
+                </div>
+                        <div id="popupTechnologies" class="tech-tags-container"></div>
+                    </div>
+                    
+                    <div class="popup-section features-section">
+                        <div class="section-header">
+                    <h3>Key Features</h3>
+                            <div class="section-indicator"></div>
+                </div>
+                        <div id="popupFeatures" class="features-grid"></div>
+                    </div>
+                    
+                    <div class="popup-section architecture-section">
+                        <div class="section-header">
+                    <h3>Architecture & Implementation</h3>
+                            <div class="section-indicator"></div>
+                        </div>
+                        <div class="architecture-content">
+                    <p id="popupArchitecture">Architecture details and implementation approach.</p>
+                </div>
+                    </div>
+                    
+                    <div class="popup-section challenges-section">
+                        <div class="section-header">
+                    <h3>Challenges & Solutions</h3>
+                            <div class="section-indicator"></div>
+                        </div>
+                        <div class="challenges-content">
+                    <p id="popupChallenges">Technical challenges faced and how they were solved.</p>
+                </div>
+            </div>
+                </div>
+            </div>
+            
+            <div class="popup-footer">
+                <div class="popup-button-container">
+                    <button class="popup-github-btn" id="popupGithubBtn">
+                        <span>View on GitHub</span>
+                </button>
+                    <button class="popup-demo-btn" id="popupExternalBtn">
+                        <span>Live Demo</span>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/js/app.js"></script>
+</body>
+</html>
