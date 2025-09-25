@@ -10,14 +10,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
             
+            console.log('Navigation clicked:', targetId, 'Target section:', targetSection);
+            
             if (targetSection) {
-                const headerHeight = 80; // Height of fixed header
-                const targetPosition = targetSection.offsetTop - headerHeight;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
+                // Use scrollIntoView with CSS scroll-margin-top for proper offset
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
                 });
+                
+                console.log('Scrolling to section:', targetId);
+            } else {
+                console.error('Target section not found:', targetId);
             }
         });
     });
@@ -249,11 +253,27 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo(0, scrollPosition);
         }
         
-        // Close menu when clicking on nav links
+        // Close menu when clicking on nav links and handle navigation
         mobileNavLinks.addEventListener('click', function(e) {
             if (e.target.tagName === 'A') {
-                console.log('Nav link clicked, closing menu');
+                console.log('Mobile nav link clicked, closing menu');
+                
+                // Get the target section
+                const targetId = e.target.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                // Close the menu first
                 closeMenu();
+                
+                // Then scroll to the section after a short delay
+                if (targetSection) {
+                    setTimeout(() => {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }, 300); // Wait for menu close animation
+                }
             }
         });
         
