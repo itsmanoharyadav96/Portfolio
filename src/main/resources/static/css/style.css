@@ -366,8 +366,9 @@ main {
 
 /* Right Side - Social Links with Animations */
 .hero-right {
-    flex: 1;
+    
     display: flex;
+    flex: 2;
     justify-content: flex-end;
     align-items: flex-start;
     padding-top: 100px;
