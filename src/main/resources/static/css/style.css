@@ -246,12 +246,12 @@ main {
     font-size: 84px;
     font-weight: bold;
     color: #ffffff;
-    line-height: 0.82;
+    line-height: 1;
     margin-bottom: 45px;
     letter-spacing: -3px;
     font-family: 'Arial', sans-serif;
     margin: 0 0 45px 0;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .title-line-1 {
