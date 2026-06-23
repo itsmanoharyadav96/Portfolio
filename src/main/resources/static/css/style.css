@@ -234,7 +234,7 @@ main {
 
 /* Left Side - Title and Description with Animations */
 .hero-left {
-    flex: 1;
+    flex: 2;
     max-width: 800px;
     padding-top: 20px;
     opacity: 0;
