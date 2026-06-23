@@ -1893,10 +1893,10 @@ main {
 
     .hero-left h1 {
     font-size: 48px;
-    line-height: 1.2;    /* ✅ Proper spacing */
-    letter-spacing: -1px; /* Optional - compact look */
+    line-height: 1.2;
+    white-space: nowrap;   
+    letter-spacing: -0.5px;
 }
-    
     .hero-left p {
         max-width: 100%;
         font-size: 16px;
