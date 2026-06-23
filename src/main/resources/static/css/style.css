@@ -261,12 +261,12 @@ main {
     animation: slideInUp 0.8s ease-out 1s forwards;
 }
 
-.title-line-2 {
+/* .title-line-2 {
     display: inline;
     opacity: 0;
     transform: translateY(50px);
     animation: slideInUp 0.8s ease-out 1.3s forwards;
-}
+} */
 
 .hero-description {
     font-size: 18px;
