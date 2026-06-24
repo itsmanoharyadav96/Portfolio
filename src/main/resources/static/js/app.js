@@ -83,44 +83,40 @@ document.addEventListener('DOMContentLoaded', function() {
     const initArticlesPagination = () => {
         const paginationDots = document.querySelectorAll('.pagination-dot');
         const paginationArrow = document.querySelector('.pagination-arrow');
-        const articlesGrid = document.querySelector('.articles-grid');
+        const articlesTrack = document.getElementById('articlesTrack');
         
-        if (!paginationDots.length || !articlesGrid) {
+        if (!paginationDots.length || !articlesTrack) {
             console.log('Articles pagination elements not found');
             return;
         }
         
         let currentPage = 1;
         const articlesPerPage = 4;
-        const allArticles = Array.from(articlesGrid.querySelectorAll('.article-card'));
+        const allArticles = Array.from(articlesTrack.querySelectorAll('.article-card'));
         const totalPages = Math.ceil(allArticles.length / articlesPerPage);
         
         console.log('Articles pagination initialized - Articles:', allArticles.length, 'Pages:', totalPages);
         
         function updateArticlesDisplay() {
-            // Hide all articles
             allArticles.forEach(article => {
                 article.style.display = 'none';
             });
             
-            // Show articles for current page
             const startIndex = (currentPage - 1) * articlesPerPage;
             const endIndex = Math.min(startIndex + articlesPerPage, allArticles.length);
             
             for (let i = startIndex; i < endIndex; i++) {
                 if (allArticles[i]) {
-                    allArticles[i].style.display = 'block';
+                    allArticles[i].style.display = 'flex';
                 }
             }
             
-            // Update pagination dots
             paginationDots.forEach((dot, index) => {
                 const pageNumber = index + 1;
                 dot.classList.toggle('active', pageNumber === currentPage);
             });
         }
         
-        // Event listeners for pagination dots
         paginationDots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 const pageNumber = index + 1;
@@ -131,17 +127,17 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Event listener for arrow (next page)
         if (paginationArrow) {
             paginationArrow.addEventListener('click', () => {
                 if (currentPage < totalPages) {
                     currentPage++;
-                    updateArticlesDisplay();
+                } else {
+                    currentPage = 1;
                 }
+                updateArticlesDisplay();
             });
         }
         
-        // Initialize display
         updateArticlesDisplay();
     };
     
